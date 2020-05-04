@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  --main-color: yellow;
+}
+
+body {
+  background-color: #444;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
+  min-width: 400px;
+}
+
+.pick {
+  margin-bottom: 30px;
+  color: white;
+}
+
+.pick label {
+  margin-right: 15px;
+}
+
+.pick select {
+  padding: 5px 10px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 5px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.legend {
+  list-style: none;
+  display: flex;
+  width: auto;
+  justify-content: space-evenly;
+  background-color: #333;
+  margin-bottom: 30px;
+  color: white;
+  font-weight: 300;
+}
+
+.legend li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.legend .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+
+.seat {
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-color: #666;
+  margin: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.occupied {
+  background-color: white;
+}
+
+.selected {
+  background-color: var(--main-color);
+}
+
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.row {
+  display: flex;
+}
+
+.row .seat:nth-child(2) {
+  margin-right: 15px;
+}
+
+.row .seat:nth-child(9) {
+  margin-left: 15px;
+}
+
+.screen {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 30px;
+  background-color: white;
+  box-shadow: 1px 1px 30px rgba(255, 255, 255, 0.3);
+  transform: rotateX(-45deg);
+}
+
+.container {
+  perspective: 1000px;
+}
+
+.checkout {
+  margin-top: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkout small {
+  opacity: 0.5;
+  font-weight: 300;
+}
+
+#seats,
+#price {
+  color: var(--main-color);
+}
