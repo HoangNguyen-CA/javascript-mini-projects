@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 class="title">Expense Tracker</h1>
+      <div class="balance">
+        <p>Your Balance:<br /><span id="balance">0 </span></p>
+      </div>
+      <div class="display">
+        <div class="income-container">
+          <p>Income:</p>
+          <p id="income" class="income">0</p>
+        </div>
+        <div class="divider"></div>
+        <div class="expense-container">
+          <p>Expense:</p>
+          <p id="expense" class="expense">0</p>
+        </div>
+      </div>
+      <div class="transaction">
+        <p class="sub">Add a new transaction</p>
+        <hr />
+        <div class="form-control">
+          <label for="name">Text</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="form-control">
+          <label for="cost"
+            >Amount<br />(positive = income, negative = expense)</label
+          >
+          <input type="number" name="cost" id="cost" />
+        </div>
+        <a id="button" class="button">Add Transaction</a>
+      </div>
+      <div class="history">
+        <p class="sub">History</p>
+        <hr />
+        <div class="history-container">
+          <div class="history-item history-failure">
+            <p class="history-name">name</p>
+            <p class="history-price">-$100</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
