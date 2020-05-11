@@ -68,18 +68,16 @@ function updateValues() {
   income = income.reduce((prev, curr) => prev + curr.cost, 0).toFixed(2);
 
   let expense = dummyTransactions.filter((trans) => trans.cost < 0);
-  expense = expense
-    .reduce((prev, curr) => {
-      return prev + curr.cost;
-    }, 0)
-    .toFixed(2);
+  expense = expense.reduce((prev, curr) => {
+    return prev + curr.cost;
+  }, 0);
 
   let total = dummyTransactions
     .reduce((prev, curr) => prev + curr.cost, 0)
     .toFixed(2);
 
   Income.innerText = `$${income}`;
-  Expense.innerText = `-$${Math.abs(expense)}`;
+  Expense.innerText = `-$${Math.abs(expense).toFixed(2)}`;
 
   Balance.innerText = `$${total}`;
 }
