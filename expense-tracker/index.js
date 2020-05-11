@@ -46,7 +46,7 @@ function createHistory(transaction) {
 
 function addTransaction() {
   if (Name.value.trim() === '' || Cost.value.trim() === '') {
-    alert('please add name and amount');
+    alert('please add text and amount');
   } else {
     let transaction = {
       id: generateId(),
@@ -79,7 +79,7 @@ function updateValues() {
     .toFixed(2);
 
   Income.innerText = `$${income}`;
-  Expense.innerText = `$${expense}`;
+  Expense.innerText = `-$${Math.abs(expense)}`;
 
   Balance.innerText = `$${total}`;
 }
