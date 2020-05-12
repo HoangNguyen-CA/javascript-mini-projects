@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+}
+.form-control label {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 1.5rem;
+}
+
+.form-control input {
+  display: block;
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 5px 8px;
+  outline: none;
+  border: 1px solid lightgrey;
+}
+
+.form-control input:focus {
+  border: 1px solid #333;
+}
+
+.main-container {
+  min-height: 100vh;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.temperature-display {
+  font-size: 1.4rem;
+  margin-bottom: 3px;
+}
+
+.converted {
+  font-size: 1.3rem;
+}
+
+.swap-btn {
+  margin: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.submit {
+  margin: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.form-control {
+  padding: 20px;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}

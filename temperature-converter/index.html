@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 class="title">Temperature Converter</h1>
+      <form id="form" class="form">
+        <div class="form-control">
+          <label for="temperature" id="label">Temperature in celsius:</label>
+          <input type="number" name="temperature" id="temperature" autofocus />
+        </div>
+        <button class="swap-btn">Swap</button>
+        <div class="form-control">
+          <p class="temperature-display">Temperature in fahrenheit:</p>
+          <p class="converted">0</p>
+        </div>
+
+        <button type="submit" class="submit" id="submit">Calculate</button>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
