@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --main-color: #19b5fe;
+}
+
+body {
+  background-color: #333;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.game {
+  display: flex;
+  justify-content: space-around;
+}
+
+.image-container {
+  border: 3px solid white;
+  border-radius: 50%;
+  padding: 1em;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.image-container:hover {
+  background-color: #555;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.7em;
+  color: white;
+}
+
+.score {
+  border: 2px solid white;
+  min-width: 300;
+  max-width: 20%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+  font-size: 1.3rem;
+  padding: 0.3em 0.5em;
+  margin-bottom: 1.7em;
+}
+
+.divider {
+  display: block;
+  width: 5px;
+  height: 100%;
+  background-color: white;
+}
+
+.display {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.4em;
+}
+
+.display p {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.instructions {
+  text-align: center;
+}
+
+.instructions p {
+  color: white;
+  font-size: 1.6rem;
+  margin-top: 1.2em;
+}
+
+.highlight {
+  color: white;
+}
