@@ -15,7 +15,6 @@ html {
   align-items: center;
   justify-content: center;
   margin: 1.5em;
-  border: 1px solid black;
   height: auto;
 }
 
@@ -26,13 +25,24 @@ html {
 }
 
 .carousel {
-  width: 60%;
+  width: 80%;
+  max-width: 700px;
   position: relative;
+  overflow: hidden;
 }
 
 .carousel__button {
   position: absolute;
   top: 50%;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 2rem;
+  width: 1em;
+  z-index: 100;
+  background: transparent;
+  transform: translateY(-50%);
 }
 
 .carousel__button--prev {
@@ -47,16 +57,30 @@ html {
   display: flex;
   justify-content: flex-start;
   list-style: none;
-  width: auto;
-  border: 1px solid black;
+  width: 100%;
 }
 
-.carousel__img-container {
+.carousel__item {
+  position: relative;
   flex-shrink: 0;
   width: 100%;
+  background-color: black;
 }
 
-.carousel__img-container__img {
+.carousel__header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  color: white;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: 400;
+}
+.carousel__img {
   width: 100%;
   display: block;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  opacity: 0.7;
 }
