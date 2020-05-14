@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5em;
+  border: 1px solid black;
+  height: auto;
+}
+
+.container__title {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 0.3em;
+}
+
+.carousel {
+  width: 60%;
+  position: relative;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+}
+
+.carousel__button--prev {
+  left: 10%;
+}
+
+.carousel__button--next {
+  right: 10%;
+}
+
+.carousel__slide {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  width: auto;
+  border: 1px solid black;
+}
+
+.carousel__img-container {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.carousel__img-container__img {
+  width: 100%;
+  display: block;
+}
