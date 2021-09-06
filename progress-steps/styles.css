@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --primary: #3498db;
+  --grey: #e0e0e0;
+  --lineWidth: 3px;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.steps {
+  list-style: none;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 400px;
+  max-width: 100%;
+}
+
+#progress {
+  z-index: -1;
+  position: absolute;
+  background-color: var(--primary);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 0%;
+  height: var(--lineWidth);
+  transform: translateY(-50%);
+}
+
+.steps::before {
+  z-index: -1;
+  content: '';
+  background-color: var(--grey);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: var(--lineWidth);
+  transform: translateY(-50%);
+}
+
+.steps__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: var(--lineWidth) solid var(--grey);
+  background-color: white;
+  border-radius: 1000px;
+  font-weight: 600;
+}
+
+.steps__item--active {
+  border: var(--lineWidth) solid var(--primary);
+}
+
+.controls {
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+}
+
+.btn:disabled {
+  background-color: var(--grey);
+  color: white;
+}
