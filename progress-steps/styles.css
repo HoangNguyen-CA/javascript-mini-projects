@@ -17,6 +17,9 @@ html {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+
+  padding: 5px;
+  min-width: 300px;
 }
 
 .steps {
@@ -38,6 +41,8 @@ html {
   width: 0%;
   height: var(--lineWidth);
   transform: translateY(-50%);
+
+  transition: 0.4s ease-out;
 }
 
 .steps::before {
@@ -62,6 +67,8 @@ html {
   background-color: white;
   border-radius: 1000px;
   font-weight: 600;
+
+  transition: 0.4s ease-out;
 }
 
 .steps__item--active {
@@ -69,21 +76,31 @@ html {
 }
 
 .controls {
-  margin-top: 25px;
+  margin-top: 30px;
+}
+
+.controls > * + * {
+  margin-left: 8px;
 }
 
 .btn {
-  padding: 0.5em 1em;
+  padding: 0.7em 1.4em;
   font-size: 1rem;
   cursor: pointer;
   background-color: var(--primary);
   color: white;
   border-radius: 5px;
-  border: none;
+  border: 0px;
   font-weight: 500;
+  font-family: inherit;
+}
+
+.btn:active {
+  transform: scale(0.98);
 }
 
 .btn:disabled {
   background-color: var(--grey);
   color: white;
+  cursor: not-allowed;
 }

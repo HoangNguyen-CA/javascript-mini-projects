@@ -6,6 +6,7 @@ const stepsItems = document.querySelectorAll('.steps__item');
 
 let step = 0;
 let MAX_STEPS = stepsItems.length;
+
 const resetSteps = () => {
   for (let item of stepsItems) {
     item.classList.remove('steps__item--active');
